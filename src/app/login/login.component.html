@@ -1,0 +1,22 @@
+
+<div class="bg-gray-200 h-screen flex items-center justify-center">
+    <form [formGroup]="loginForm" class=" p-6 rounded-lg shadow-lg w-2/5 h-2/4 text-center bg-cyan-200">
+      <h2 class="text-2xl font-semibold mb-4">Login</h2>
+      <div class="mb-4">
+        <label for="username" class="block text-gray-700">Username</label>
+        <input type="text" id="username" formControlName="username" class="form-input" />
+      </div>
+      <div class="mb-4">
+        <label for="password" class="block text-gray-700">Password</label>
+        <input type="password" id="password" formControlName="password" class="form-input" />
+      </div>
+      <button type="submit" class="bg-blue-500 text-white p-2 rounded" (click)="Login()">Submit</button>
+
+      <div *ngIf="loginForm.invalid && submit_clicked ">
+        <div class=" text-red-700">
+        Please enter username
+      </div>
+    </div>
+    </form>
+  </div>
+  
