@@ -1,0 +1,15 @@
+<div class=" text-center">
+    <div class=" text-xl pb-2 font-bold">User List</div>
+    <div class=" grid grid-cols-4 justify-items-center text-center bg-slate-100 p-2 ">
+        <div>name</div>
+        <div>email</div>
+        <div>phone</div>
+        <div>city</div>
+    </div>
+    <div class=" grid grid-cols-4 justify-items-center text-center p-2 " *ngFor="let list of user_list">
+        <div>{{list.name}}</div>
+        <div>{{list.email}}</div>
+        <div>{{list.phone}}</div>
+        <div>{{list.city}}</div>
+    </div>
+</div>

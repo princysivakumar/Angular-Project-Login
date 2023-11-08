@@ -1,0 +1,10 @@
+<div class="p-4 flex justify-between">
+  <button [routerLink]="['login']" routerLinkActive="active" class=" mr-4">Login</button>
+
+  <button [routerLink]="['user-register']" routerLinkActive="active">Register</button>
+
+  <button [routerLink]="['login']" routerLinkActive="active" (click)="LogOut()" >LogOut</button>
+
+</div>
+
+<router-outlet></router-outlet>
